@@ -9,7 +9,7 @@ resource "aws_launch_template" "example" {
   name_prefix          = "example-"
   image_id             = "ami-0866a3c8686eaeeba" # Replace with your AMI ID
   instance_type        = "t2.micro"
-  key_name             = "atishay" # Replace with your SSH key
+  key_name             = "Pardeep" # Replace with your SSH key
 
   network_interfaces {
     associate_public_ip_address = true
