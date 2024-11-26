@@ -1,19 +1,19 @@
 # main.tf
 
 provider "aws" {
-  region = "us-east-1" # Replace with your preferred region
+  region = "us-west-2" # Replace with your preferred region
 }
 
 # Launch Template
 resource "aws_launch_template" "example" {
   name_prefix          = "example-"
-  image_id             = "ami-0866a3c8686eaeeba" # Replace with your AMI ID
+  image_id             = "ami-04dd23e62ed049936" # Replace with your AMI ID
   instance_type        = "t2.micro"
-  key_name             = "Pardeep" # Replace with your SSH key
+  key_name             = "autoscaling" # Replace with your SSH key
 
   network_interfaces {
     associate_public_ip_address = true
-    security_groups             = ["sg-0b1706bc12924bff6"] # Replace with your security group
+    security_groups             = ["sg-056ae9373213c5266"] # Replace with your security group
   }
 }
 
