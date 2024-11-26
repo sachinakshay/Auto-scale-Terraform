@@ -13,7 +13,7 @@ resource "aws_launch_template" "example" {
 
   network_interfaces {
     associate_public_ip_address = true
-    security_groups             = ["sg-056ae9373213c5266"] # Replace with your security group
+    security_groups             = ["sg-06ddb5489f4a62d8f"] # Replace with your security group
   }
 }
 
