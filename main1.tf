@@ -27,7 +27,7 @@ resource "aws_autoscaling_group" "example" {
   min_size         = var.min_size
   max_size         = var.max_size
   desired_capacity = var.desired_capacity
-  vpc_zone_identifier = ["subnet-0bb045e90acb875fc"] # Replace with your subnet ID
+  vpc_zone_identifier = ["subnet-025a79b1fdef9360c"] # Replace with your subnet ID
 
   tag {
     key                 = "Name"
